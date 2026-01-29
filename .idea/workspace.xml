@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f44e84fd-469e-4832-9e17-d5298138bef0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/OOPSBannerApp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bridgelabzproject/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/QuantityMeasurementApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bridgelabzproject/src/test/java/com/apps/quantitymeasurement/QuantityMeasurementAppTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="38vT40MYl6vhhermXDzAl6uSgR8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.QuantityMeasurementApp.executor": "Run",
+    "JUnit.QuantityMeasurementAppTest.executor": "Run",
+    "Maven.Bridgelabzproject [clean,install].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "feature/UC1-PrintOOPS"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="QuantityMeasurementAppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bridgelabzproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.apps.quantitymeasurement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.apps.quantitymeasurement" />
+      <option name="MAIN_CLASS_NAME" value="com.apps.quantitymeasurement.QuantityMeasurementAppTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.QuantityMeasurementAppTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f44e84fd-469e-4832-9e17-d5298138bef0" name="Changes" comment="" />
+      <created>1769678850995</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1769678850995</updated>
+    </task>
+    <servers />
+  </component>
+</project>
