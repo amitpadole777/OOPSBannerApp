@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f44e84fd-469e-4832-9e17-d5298138bef0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/Length.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/QuantityMeasurementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/QuantityMeasurementApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bridgelabzproject/src/test/java/com/apps/quantitymeasurement/QuantityMeasurementAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/src/test/java/com/apps/quantitymeasurement/QuantityMeasurementAppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/QuantityMeasurementApp$Feet.class" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/QuantityMeasurementApp$Feet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/QuantityMeasurementApp$Feet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/QuantityMeasurementApp$Inches.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/QuantityMeasurementApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/QuantityMeasurementApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bridgelabzproject/target/test-classes/com/apps/quantitymeasurement/QuantityMeasurementAppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/target/test-classes/com/apps/quantitymeasurement/QuantityMeasurementAppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,19 +31,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.QuantityMeasurementApp.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.QuantityMeasurementAppTest.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Bridgelabzproject [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/UC2-feet-inches-equality&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.QuantityMeasurementApp.executor": "Run",
+    "JUnit.QuantityMeasurementAppTest.executor": "Run",
+    "Maven.Bridgelabzproject [clean,install].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "feature/UC3-generic-class-DRY-principle"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.QuantityMeasurementAppTest">
+}]]></component>
+  <component name="RunManager" selected="Application.QuantityMeasurementApp">
     <configuration name="QuantityMeasurementApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.apps.quantitymeasurement.QuantityMeasurementApp" />
       <module name="Bridgelabzproject" />
@@ -71,8 +74,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.QuantityMeasurementAppTest" />
         <item itemvalue="Application.QuantityMeasurementApp" />
+        <item itemvalue="JUnit.QuantityMeasurementAppTest" />
       </list>
     </recent_temporary>
   </component>

@@ -5,93 +5,87 @@ public class QuantityMeasurementAppTest {
 
     @Test
     public void testFeetEquality_SameValue(){
-        QuantityMeasurementApp.Feet obj1 = new QuantityMeasurementApp.Feet(1.0);
-        QuantityMeasurementApp.Feet obj2 = new QuantityMeasurementApp.Feet(1.0);
+        Length length1 = new Length(1.0, Length.LengthUnit.FEET);
+        Length length2 = new Length(1.0, Length.LengthUnit.FEET);
         boolean expectedResult = true;
-        boolean actualResult = obj1.equals(obj2);
+        boolean actualResult = length1.equals(length2);
         assertEquals(expectedResult, actualResult);
     }
-
-    @Test
-    public void testFeetEquality_DifferentValue(){
-        QuantityMeasurementApp.Feet obj1 = new QuantityMeasurementApp.Feet(1.0);
-        QuantityMeasurementApp.Feet obj2 = new QuantityMeasurementApp.Feet(2.0);
-        boolean expectedResult = false;
-        boolean actualResult = obj1.equals(obj2);
-        assertEquals(expectedResult, actualResult);
-    }
-
-    @Test
-    public void testFeetEquality_NullComparison(){
-        QuantityMeasurementApp.Feet obj1 = new QuantityMeasurementApp.Feet(1.0);
-        QuantityMeasurementApp.Feet obj2 = null;
-        boolean expectedResult = false;
-        boolean actualResult = obj1.equals(obj2);
-        assertEquals(expectedResult, actualResult);
-    }
-
-    @Test
-    public void testFeetEquality_DifferentClass(){
-        QuantityMeasurementApp.Feet obj1 = new QuantityMeasurementApp.Feet(1.0);
-        Integer obj2 = 1;
-        boolean expectedResult = false;
-        boolean actualResult = obj1.equals(obj2);
-        assertEquals(expectedResult, actualResult);
-    }
-
-    @Test
-    public void testFeetEquality_SameReference(){
-        QuantityMeasurementApp.Feet obj1 = new QuantityMeasurementApp.Feet(1.0);
-        QuantityMeasurementApp.Feet obj2 = obj1;
-        boolean expectedResult = true;
-        boolean actualResult = obj1.equals(obj2);
-        assertEquals(expectedResult, actualResult);
-    }
-
-    // new
 
     @Test
     public void testInchesEquality_SameValue(){
-        QuantityMeasurementApp.Inches obj1 = new QuantityMeasurementApp.Inches(1.0);
-        QuantityMeasurementApp.Inches obj2 = new QuantityMeasurementApp.Inches(1.0);
+        Length length1 = new Length(1.0, Length.LengthUnit.INCHES);
+        Length length2 = new Length(1.0, Length.LengthUnit.INCHES);
         boolean expectedResult = true;
-        boolean actualResult = obj1.equals(obj2);
+        boolean actualResult = length1.equals(length2);
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void testInchesEquality_DifferentValue(){
-        QuantityMeasurementApp.Inches obj1 = new QuantityMeasurementApp.Inches(1.0);
-        QuantityMeasurementApp.Inches obj2 = new QuantityMeasurementApp.Inches(2.0);
-        boolean expectedResult = false;
-        boolean actualResult = obj1.equals(obj2);
-        assertEquals(expectedResult, actualResult);
-    }
-
-    @Test
-    public void testInchesEquality_NullComparison(){
-        QuantityMeasurementApp.Inches obj1 = new QuantityMeasurementApp.Inches(1.0);
-        QuantityMeasurementApp.Inches obj2 = null;
-        boolean expectedResult = false;
-        boolean actualResult = obj1.equals(obj2);
-        assertEquals(expectedResult, actualResult);
-    }
-
-    @Test
-    public void testInchesEquality_DifferentClass(){
-        QuantityMeasurementApp.Inches obj1 = new QuantityMeasurementApp.Inches(1.0);
-        Integer obj2 = 1;
-        boolean expectedResult = false;
-        boolean actualResult = obj1.equals(obj2);
-        assertEquals(expectedResult, actualResult);
-    }
-
-    @Test
-    public void testInchesEquality_SameReference(){
-        QuantityMeasurementApp.Inches obj1 = new QuantityMeasurementApp.Inches(1.0);
-        QuantityMeasurementApp.Inches obj2 = obj1;
+    public void testFeetInchesComparison(){
+        Length length1 = new Length(1.0, Length.LengthUnit.FEET);
+        Length length2 = new Length(12.0, Length.LengthUnit.INCHES);
         boolean expectedResult = true;
-        boolean actualResult = obj1.equals(obj2);
+        boolean actualResult = length1.equals(length2);
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testFeetInequality_DifferentValue(){
+        Length length1 = new Length(1.0, Length.LengthUnit.FEET);
+        Length length2 = new Length(2.0, Length.LengthUnit.FEET);
+        System.out.println(length1.equals(length2));
+        boolean expectedResult = false;
+        boolean actualResult = length1.equals(length2);
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testInchesInequality_DifferentValue(){
+        Length length1 = new Length(1.0, Length.LengthUnit.INCHES);
+        Length length2 = new Length(2.0, Length.LengthUnit.INCHES);
+        System.out.println(length1.equals(length2));
+        boolean expectedResult = false;
+        boolean actualResult = length1.equals(length2);
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testCrossUnitInequality(){
+        Length length1 = new Length(1.0, Length.LengthUnit.INCHES);
+        Length length2 = new Length(1.0, Length.LengthUnit.FEET);
+        System.out.println(length1.equals(length2));
+        boolean expectedResult = false;
+        boolean actualResult = length1.equals(length2);
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testEqualitySameReference(){
+        Length length1 = new Length(1.0, Length.LengthUnit.FEET);
+        Length length2 = length1;
+        boolean expectedResult = true;
+        boolean actualResult = length1.equals(length2);
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testEqualityNullComparison(){
+        Length length1 = new Length(1.0, Length.LengthUnit.FEET);
+        Length length2 = null;
+        boolean expectedResult = false;
+        boolean actualResult = length1.equals(length2);
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testEqualityNullUnit(){
+
+        Length length1 = new Length(1.0, Length.LengthUnit.FEET);
+        Length length2 = new Length(1.0, null);
+
+        boolean expectedResult = false;
+        boolean actualResult = length1.equals(length2);
         assertEquals(expectedResult, actualResult);
     }
 }
