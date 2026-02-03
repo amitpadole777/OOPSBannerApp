@@ -6,7 +6,7 @@ public class Length {
     private LengthUnit unit;
 
     public enum LengthUnit{
-        FEET(12.0),INCHES(1.0);
+        FEET(12.0),INCHES(1.0), YARD(36), CM(0.393701);
 
         private final double conversionFactor;
 
@@ -28,26 +28,19 @@ public class Length {
 
     //length -> base unit (INCHES)
     private double convertToBaseUnit(){
+
         return 12.0;
     }
 
     public boolean compare(Length thatLength){
 
         double thatCF = thatLength.unit.conversionFactor;
-        String thatType = thatLength.unit.name();  // feet
-
-
         double thisCF = this.unit.conversionFactor;
-        String thisType = this.unit.name(); // inches
 
-        // value coming in feet convert to inches.
-        if(thatType.equals("FEET")){
-            thatLength.value = thatLength.value * convertToBaseUnit();
-        }
+        // converting into base unit.
+        thatLength.value = thatLength.value * thatCF;
+        this.value = this.value * thisCF;
 
-        if(thisType.equals("FEET")){
-            this.value = this.value * convertToBaseUnit();
-        }
         return Double.compare(this.value, thatLength.value) == 0;
     }
 
@@ -63,8 +56,8 @@ public class Length {
 
     // main for standalone testing
     public static void main(String[] args) {
-        Length length1 = new Length(2.0, LengthUnit.FEET);
-        Length length2 = new Length(24.0, null);
-        System.out.println(length1.equals(length2));
+        Length length1 = new Length(3.0, LengthUnit.FEET);
+        Length length2 = new Length(1.0, LengthUnit.YARD);
+        System.out.println(length1.equals(length2) + " validation");
     }
 }

@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f44e84fd-469e-4832-9e17-d5298138bef0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/Length.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/QuantityMeasurementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/QuantityMeasurementApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bridgelabzproject/src/test/java/com/apps/quantitymeasurement/QuantityMeasurementAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/src/test/java/com/apps/quantitymeasurement/QuantityMeasurementAppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/QuantityMeasurementApp$Feet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/QuantityMeasurementApp$Inches.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/Length.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/Length.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/Length$LengthUnit.class" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/Length$LengthUnit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/Length.class" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/Length.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/QuantityMeasurementApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/QuantityMeasurementApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bridgelabzproject/target/test-classes/com/apps/quantitymeasurement/QuantityMeasurementAppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/target/test-classes/com/apps/quantitymeasurement/QuantityMeasurementAppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +30,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Length.executor": "Run",
     "Application.QuantityMeasurementApp.executor": "Run",
     "JUnit.QuantityMeasurementAppTest.executor": "Run",
     "Maven.Bridgelabzproject [clean,install].executor": "Run",
@@ -40,10 +38,23 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "feature/UC3-generic-class-DRY-principle"
+    "git-widget-placeholder": "feature/UC4-extended-unit-support"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.QuantityMeasurementApp">
+  <component name="RunManager" selected="Application.Length">
+    <configuration name="Length" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.apps.quantitymeasurement.Length" />
+      <module name="Bridgelabzproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.apps.quantitymeasurement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="QuantityMeasurementApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.apps.quantitymeasurement.QuantityMeasurementApp" />
       <module name="Bridgelabzproject" />
@@ -74,6 +85,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Length" />
         <item itemvalue="Application.QuantityMeasurementApp" />
         <item itemvalue="JUnit.QuantityMeasurementAppTest" />
       </list>
