@@ -34,20 +34,12 @@ public class Length {
     public boolean compare(Length thatLength){
 
         double thatCF = thatLength.unit.conversionFactor;
-        String thatType = thatLength.unit.name();  // feet
-
-
         double thisCF = this.unit.conversionFactor;
-        String thisType = this.unit.name(); // inches
 
-        // value coming in feet convert to inches.
-        if(thatType.equals("FEET")){
-            thatLength.value = thatLength.value * convertToBaseUnit();
-        }
+        // converting into base unit.
+        thatLength.value = thatLength.value * thatCF;
+        this.value = this.value * thisCF;
 
-        if(thisType.equals("FEET")){
-            this.value = this.value * convertToBaseUnit();
-        }
         return Double.compare(this.value, thatLength.value) == 0;
     }
 
