@@ -7,9 +7,12 @@
     <list default="true" id="f44e84fd-469e-4832-9e17-d5298138bef0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/Length.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/Length.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/QuantityMeasurementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/QuantityMeasurementApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bridgelabzproject/src/test/java/com/apps/quantitymeasurement/QuantityMeasurementAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/src/test/java/com/apps/quantitymeasurement/QuantityMeasurementAppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/Length$LengthUnit.class" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/Length$LengthUnit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/Length.class" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/Length.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/QuantityMeasurementApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/QuantityMeasurementApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bridgelabzproject/target/test-classes/com/apps/quantitymeasurement/QuantityMeasurementAppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/target/test-classes/com/apps/quantitymeasurement/QuantityMeasurementAppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +34,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Length.executor": "Run",
-    "Application.QuantityMeasurementApp.executor": "Run",
+    "Application.QuantityMeasurementApp.executor": "Debug",
     "JUnit.QuantityMeasurementAppTest.executor": "Run",
     "Maven.Bridgelabzproject [clean,install].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -41,7 +44,7 @@
     "git-widget-placeholder": "feature/UC4-extended-unit-support"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Length">
+  <component name="RunManager" selected="JUnit.QuantityMeasurementAppTest">
     <configuration name="Length" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.apps.quantitymeasurement.Length" />
       <module name="Bridgelabzproject" />
@@ -85,9 +88,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Length" />
-        <item itemvalue="Application.QuantityMeasurementApp" />
         <item itemvalue="JUnit.QuantityMeasurementAppTest" />
+        <item itemvalue="Application.QuantityMeasurementApp" />
+        <item itemvalue="Application.Length" />
       </list>
     </recent_temporary>
   </component>
@@ -100,5 +103,61 @@
       <updated>1769678850995</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/Length.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/Length.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/Length.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/Length.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/Length.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/Length.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/Length.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/Length.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/Length.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/Length.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

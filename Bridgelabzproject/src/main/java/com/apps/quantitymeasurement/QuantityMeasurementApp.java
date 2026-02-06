@@ -2,36 +2,27 @@ package com.apps.quantitymeasurement;
 
 public class QuantityMeasurementApp {
 
-    public static boolean demonstrateLengthEquality(Length length1, Length length2){
-        return length1.equals(length2);
-    }
-
-    public static void demonstrateFeetEquality(){
-        Length length1 = new Length(1.0, Length.LengthUnit.FEET);
-        Length length2 = new Length(1.0, Length.LengthUnit.FEET);
-        System.out.println(length1.equals(length2));
-    }
-
-    public static void demonstrateInchesEquality(){
-        Length length1 = new Length(1.0, Length.LengthUnit.INCHES);
-        Length length2 = new Length(1.0, Length.LengthUnit.INCHES);
-        System.out.println(length1.equals(length2));
-    }
-
-    public static void demonstrateFeetInchesComparison(){
-        Length length1 = new Length(1.0, Length.LengthUnit.FEET);
-        Length length2 = new Length(12.0, Length.LengthUnit.INCHES);
+    private static void demonstrateLengthComparison(double v, Length.LengthUnit lengthUnit, double v1, Length.LengthUnit lengthUnit1) {
+        Length length1 = new Length(v, lengthUnit);
+        Length length2 = new Length(v1, lengthUnit1);
         System.out.println(length1.equals(length2));
     }
 
     public static void main(String[] args) {
 
-        Length length1 = new Length(1.0, Length.LengthUnit.FEET);
-        Length length2 = new Length(12.0, Length.LengthUnit.INCHES);
-        System.out.println(demonstrateLengthEquality(length1, length2));
+         // demonstrate feet and inches comparison
+         demonstrateLengthComparison(3.0, Length.LengthUnit.FEET, 36.0, Length.LengthUnit.INCHES);
 
-        demonstrateFeetEquality();
-        demonstrateInchesEquality();
-        demonstrateFeetInchesComparison();
+         // demonstrate yard and inches comparison
+         demonstrateLengthComparison(1.0, Length.LengthUnit.YARD, 36.0, Length.LengthUnit.INCHES);
+
+         // demonstrate cm and inches comparison
+         demonstrateLengthComparison(100.0, Length.LengthUnit.CM, 39.3701, Length.LengthUnit.INCHES);
+
+         // demonstrate feet and yards comparison
+         demonstrateLengthComparison(3.0, Length.LengthUnit.FEET, 1.0, Length.LengthUnit.YARD);
+
+         // demonstrate cm and feet comparison
+        demonstrateLengthComparison(30.48, Length.LengthUnit.CM, 1.0, Length.LengthUnit.FEET);
     }
 }

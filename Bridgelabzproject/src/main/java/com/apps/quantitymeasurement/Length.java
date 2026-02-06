@@ -1,5 +1,7 @@
 package com.apps.quantitymeasurement;
 
+import java.text.DecimalFormat;
+
 public class Length {
 
     private double value;
@@ -28,7 +30,6 @@ public class Length {
 
     //length -> base unit (INCHES)
     private double convertToBaseUnit(){
-
         return 12.0;
     }
 
@@ -38,10 +39,17 @@ public class Length {
         double thisCF = this.unit.conversionFactor;
 
         // converting into base unit.
-        thatLength.value = thatLength.value * thatCF;
-        this.value = this.value * thisCF;
+        double value1 = thatLength.value;
+        double value2 = this.value;
+        value1 = value1 * thatCF;
+        value2 = value2 * thisCF;
 
-        return Double.compare(this.value, thatLength.value) == 0;
+        // keep values up to two decimals only
+        DecimalFormat df = new DecimalFormat("#.00");
+        value1 = Double.parseDouble(df.format(value1));
+        value2 = Double.parseDouble(df.format(value2));
+
+        return Double.compare(value2, value1) == 0;
     }
 
     @Override
