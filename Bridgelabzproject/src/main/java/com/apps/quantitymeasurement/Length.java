@@ -10,7 +10,6 @@ public class Length {
     public enum LengthUnit{
         FEET(12.0),INCHES(1.0), YARD(36), CM(0.393701);
 
-
         private final double conversionFactor;
 
         //constructor
@@ -29,6 +28,38 @@ public class Length {
         this.unit = unit;
     }
 
+    public Length add(Length thatLength) throws MyException {
+
+        final LengthUnit unit = this.unit;
+
+        if( thatLength == null){
+            throw new MyException("Please enter source and target");
+        }
+
+        double thatCF = thatLength.unit.conversionFactor;
+        double thisCF = this.unit.conversionFactor;
+
+        // converting into base unit.
+        double value1 = thatLength.value;
+        double value2 = this.value;
+        value1 = value1 * thatCF;
+        value2 = value2 * thisCF;
+
+        // addition in base unit inches
+        double baseValue = value1 + value2;
+
+        // convert base unit to the first unit provided
+        double convertedBaseValue = baseValue/thisCF;
+
+        // keep values up to three decimals only
+        DecimalFormat df = new DecimalFormat("#.###");
+        convertedBaseValue = Double.parseDouble(df.format(convertedBaseValue));
+
+        new Length(convertedBaseValue, unit);
+
+        return new Length(convertedBaseValue, unit);
+    }
+
     public static double convert(Double value, LengthUnit sourceUnit, LengthUnit targetUnit) throws MyException {
 
         if (value.isInfinite()){
@@ -39,7 +70,7 @@ public class Length {
             throw new MyException("Please enter source and target");
         }
 
-        if(!(sourceUnit instanceof LengthUnit && sourceUnit instanceof LengthUnit) ){
+        if(!(sourceUnit instanceof LengthUnit && targetUnit instanceof LengthUnit) ){
             throw new MyException("Either source or target is invalid");
         }
 
