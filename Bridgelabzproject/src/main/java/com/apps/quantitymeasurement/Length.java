@@ -60,6 +60,34 @@ public class Length {
         return new Length(convertedBaseValue, unit);
     }
 
+    public Length add(Length length, LengthUnit targetUnit) throws MyException {
+
+        if(targetUnit == null){
+            throw new MyException("Please enter target unit");
+        }
+
+        double thatCF = length.unit.conversionFactor;
+        double thisCF = this.unit.conversionFactor;
+
+        // converting into base unit.
+        double value1 = length.value;
+        double value2 = this.value;
+        value1 = value1 * thatCF;
+        value2 = value2 * thisCF;
+
+        // addition in base unit inches
+        double baseValue = value1 + value2;
+
+        // convert base unit to the given unit provided
+        double convertedBaseValue = baseValue/targetUnit.conversionFactor;
+
+        // keep values up to three decimals only
+        DecimalFormat df = new DecimalFormat("#.###");
+        convertedBaseValue = Double.parseDouble(df.format(convertedBaseValue));
+
+        return new Length(convertedBaseValue, targetUnit);
+    }
+
     public static double convert(Double value, LengthUnit sourceUnit, LengthUnit targetUnit) throws MyException {
 
         if (value.isInfinite()){
@@ -117,6 +145,14 @@ public class Length {
             return false;
         }
         return compare(length);
+    }
+
+    @Override
+    public String toString() {
+        return "Length{" +
+                "value=" + value +
+                ", unit=" + unit +
+                '}';
     }
 
     // main for standalone testing
