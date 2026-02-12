@@ -7,25 +7,38 @@ public class Length {
     private double value;
     private LengthUnit unit;
 
-    public enum LengthUnit{
-        FEET(12.0),INCHES(1.0), YARD(36), CM(0.393701);
-
-        private final double conversionFactor;
-
-        //constructor
-        LengthUnit(double conversionFactor) {
-            this.conversionFactor = conversionFactor;
-        }
-
-        public double getConversionFactor() {
-            return conversionFactor;
-        }
-    }
-
     // constructor
     public Length(double value, LengthUnit unit) {
         this.value = value;
         this.unit = unit;
+    }
+
+    //length -> base unit (INCHES)
+    private double convertToBaseUnit(Length length){
+        return length.value * length.unit.getConversionFactor();
+    }
+
+    public Length add(Length length, LengthUnit targetUnit) throws MyException {
+
+        if(targetUnit == null){
+            throw new MyException("Please enter target unit");
+        }
+
+        // converting into base unit.
+        double value1 = convertToBaseUnit(length);
+        double value2 = convertToBaseUnit(this);
+
+        // addition in base unit inches
+        double baseValue = value1 + value2;
+
+        // convert base unit to the given unit provided
+        double convertedBaseValue = baseValue/targetUnit.getConversionFactor();
+
+        // keep values up to three decimals only
+        DecimalFormat df = new DecimalFormat("#.###");
+        convertedBaseValue = Double.parseDouble(df.format(convertedBaseValue));
+
+        return new Length(convertedBaseValue, targetUnit);
     }
 
     public Length add(Length thatLength) throws MyException {
@@ -36,8 +49,8 @@ public class Length {
             throw new MyException("Please enter source and target");
         }
 
-        double thatCF = thatLength.unit.conversionFactor;
-        double thisCF = this.unit.conversionFactor;
+        double thatCF = thatLength.unit.getConversionFactor();
+        double thisCF = this.unit.getConversionFactor();
 
         // converting into base unit.
         double value1 = thatLength.value;
@@ -58,34 +71,6 @@ public class Length {
         new Length(convertedBaseValue, unit);
 
         return new Length(convertedBaseValue, unit);
-    }
-
-    public Length add(Length length, LengthUnit targetUnit) throws MyException {
-
-        if(targetUnit == null){
-            throw new MyException("Please enter target unit");
-        }
-
-        double thatCF = length.unit.conversionFactor;
-        double thisCF = this.unit.conversionFactor;
-
-        // converting into base unit.
-        double value1 = length.value;
-        double value2 = this.value;
-        value1 = value1 * thatCF;
-        value2 = value2 * thisCF;
-
-        // addition in base unit inches
-        double baseValue = value1 + value2;
-
-        // convert base unit to the given unit provided
-        double convertedBaseValue = baseValue/targetUnit.conversionFactor;
-
-        // keep values up to three decimals only
-        DecimalFormat df = new DecimalFormat("#.###");
-        convertedBaseValue = Double.parseDouble(df.format(convertedBaseValue));
-
-        return new Length(convertedBaseValue, targetUnit);
     }
 
     public static double convert(Double value, LengthUnit sourceUnit, LengthUnit targetUnit) throws MyException {
@@ -113,15 +98,11 @@ public class Length {
         return result;
     }
 
-    //length -> base unit (INCHES)
-    private double convertToBaseUnit(){
-        return 12.0;
-    }
 
     public boolean compare(Length thatLength){
 
-        double thatCF = thatLength.unit.conversionFactor;
-        double thisCF = this.unit.conversionFactor;
+        double thatCF = thatLength.unit.getConversionFactor();
+        double thisCF = this.unit.getConversionFactor();
 
         // converting into base unit.
         double value1 = thatLength.value;

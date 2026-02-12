@@ -1,2 +1,4 @@
-com\apps\quantitymeasurement\QuantityMeasurementApp$Feet.class
+com\apps\quantitymeasurement\Length.class
 com\apps\quantitymeasurement\QuantityMeasurementApp.class
+com\apps\quantitymeasurement\LengthUnit.class
+com\apps\quantitymeasurement\MyException.class

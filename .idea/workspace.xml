@@ -9,6 +9,8 @@
       <change beforePath="$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/Length.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/Length.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/QuantityMeasurementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/QuantityMeasurementApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bridgelabzproject/src/test/java/com/apps/quantitymeasurement/QuantityMeasurementAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/src/test/java/com/apps/quantitymeasurement/QuantityMeasurementAppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bridgelabzproject/target/Bridgelabzproject-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/target/Bridgelabzproject-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/Length$LengthUnit.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/Length.class" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/Length.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/QuantityMeasurementApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/target/classes/com/apps/quantitymeasurement/QuantityMeasurementApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bridgelabzproject/target/test-classes/com/apps/quantitymeasurement/QuantityMeasurementAppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Bridgelabzproject/target/test-classes/com/apps/quantitymeasurement/QuantityMeasurementAppTest.class" afterDir="false" />
@@ -40,7 +42,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "feature/UC7-add-with-target-specified"
+    "git-widget-placeholder": "feature/UC8-refractor-unit-enum"
   }
 }]]></component>
   <component name="RunManager" selected="JUnit.QuantityMeasurementAppTest">
@@ -102,21 +104,5 @@
       <updated>1769678850995</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/QuantityMeasurementApp.java</url>
-          <line>5</line>
-          <option name="timeStamp" value="161" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Bridgelabzproject/src/main/java/com/apps/quantitymeasurement/Length.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="162" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
